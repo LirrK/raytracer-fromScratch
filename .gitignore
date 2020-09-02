@@ -20,6 +20,9 @@
 *.out
 *.app
 
+# vorerst alle images
+*.ppm
+
 checkerboard.ppm
 
 build
