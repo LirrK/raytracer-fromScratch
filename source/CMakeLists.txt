@@ -39,3 +39,6 @@
 #add_dependencies(sdf_parser_sample glfw ${FRAMEWORK_NAME} #{COPY_BINARY})
 
 #install(TARGETS sdf_parser_sample DESTINATION .)
+
+
+add_executable(main main.cpp)
