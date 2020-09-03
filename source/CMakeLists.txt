@@ -45,6 +45,7 @@ add_executable(main
   main.cpp
   ../framework/color.hpp
   ../framework/ray.hpp
+  ../framework/image.hpp
   )
 
 target_link_libraries(main ${FRAMEWORK_NAME} ${LIBRARIES}
