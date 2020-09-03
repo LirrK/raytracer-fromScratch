@@ -40,7 +40,7 @@
 
 #install(TARGETS sdf_parser_sample DESTINATION .)
 
-
+# ***MAIN***
 add_executable(main
   main.cpp
   ../framework/color.hpp
@@ -54,3 +54,14 @@ target_link_libraries(main ${FRAMEWORK_NAME} ${LIBRARIES}
 add_dependencies(main glfw ${FRAMEWORK_NAME} ${COPY_BINARY})
 
 install(TARGETS main DESTINATION .)
+
+
+# ***TESTS***
+add_executable(tests
+  tests.cpp
+  ../framework/color.hpp
+  ../framework/ray.hpp
+  )
+  target_link_libraries(tests
+    ${GLFW_LIBRARIES}
+  )
