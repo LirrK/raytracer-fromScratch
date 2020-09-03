@@ -10,8 +10,8 @@ public:
   Image(int image_width, int image_height);
   Image(int image_width, float aspect_ratio);
 
-  get_image_width();
-  get_image_height();
+  int get_image_width();
+  int get_image_height();
 
 private:
 

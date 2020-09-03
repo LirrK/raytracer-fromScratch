@@ -11,5 +11,5 @@ Image::Image(int image_width, float aspect_ratio)
       { image_height_ = int(image_width_ / aspect_ratio_); };
 
 
-Image::get_image_width() { return image_width_; }
-Image::get_image_height() { return image_height_; }
+int Image::get_image_width() { return image_width_; }
+int Image::get_image_height() { return image_height_; }
